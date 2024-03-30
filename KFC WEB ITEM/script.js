@@ -36,3 +36,50 @@ videos.addEventListener('ended', () =>{
 
 
 
+const dataload = () => {
+    const sec_title = document.getElementById("sec_title");
+    const h6_dot = document.getElementsByTagName("h6");
+
+    setTimeout(() => {
+        sec_title.innerHTML = " BARGAIN <br>BUCKET MENU <br>CAMPAIGN";
+        h6_dot[1].classList.add("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
+    },0);
+    setTimeout(() => {
+        sec_title.innerHTML = " BARGAIN <br>FRIES MENU <br>CAMPAIGN";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.add("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
+    }, 3000);
+    setTimeout(() => {
+        sec_title.innerHTML = " BARGAIN <br>BURGEAR MENU <br>CAMPAIGN";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.add("head_dots_main");
+        h6_dot[4].classList.remove("head_dots_main");
+    }, 6000);
+    setTimeout(() => {
+        sec_title.innerHTML = " BARGAIN <br>CHICKEN MENU <br>CAMPAIGN";
+        h6_dot[1].classList.remove("head_dots_main");
+        h6_dot[2].classList.remove("head_dots_main");
+        h6_dot[3].classList.remove("head_dots_main");
+        h6_dot[4].classList.add("head_dots_main");
+    }, 9000);
+}
+
+
+setInterval(dataload, 12000);
+
+dataload();
+
+
+const menu_icon = document.getElementById("menu_icon");
+const nav_ul_list = document.getElementById("nav_ul_list");
+
+menu_icon.addEventListener('click', () =>{
+    menu_icon.classList.toggle('humburger');
+    nav_ul_list.classList.toggle('menu_ul_list_java');
+})

@@ -22,7 +22,6 @@ header {
 header nav {
     width: 63%;
     height: 13%;
-    /* border: 1px solid #fff; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -116,13 +115,11 @@ header section{
     width: 63%;
     height: 87%;
     margin: auto;
-    /* border: 1px solid #fff; */
     display: flex;
 }
 header section .left_content_side , .right_food_side{
     width: 50%;
     height: 100%;
-    /* border: 1px solid #fff; */
     color: #fff;
     font-weight: 900;
 }
@@ -233,20 +230,16 @@ header .red_box{
     z-index: -1;
 }
 
-/* menu start  */
-
 .menu{
     position: relative;
     width: 65%;
     height: 125px;
-    /* border: 1px solid #000; */
     margin: auto;
 }
 
 .menu .menu_sec{
     width: 92%;
     height: 100%;
-    /* border: 1px solid #000; */
     margin: auto;
     display: flex;
     overflow-x: auto;
@@ -258,7 +251,6 @@ header .red_box{
 .menu .menu_sec .card{
     min-width: 115px;
     height: 92%;
-    /* border: 1px solid #000; */
     font-size: 13px;
     font-weight: 400;
     color: #282727;
@@ -354,7 +346,6 @@ header .red_box{
 .card_bx .cards_bx1{
     width: 65%;
     height: 75%;
-    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -364,7 +355,6 @@ header .red_box{
     position: relative;
     width: 280px;
     height: 170px;
-    /* border: 1px solid #000; */
     border-radius: 10px;
     box-shadow: 0px 7px 12px #ffdfbd;
     background: #fff;
@@ -431,8 +421,6 @@ header .red_box{
     height: 8px;
     background: #ffc100;
 }
-
-/* card2 change start  */
 .card_bx .cards_bx1 .card2 .content {
     color: #fff;
 }
@@ -455,9 +443,6 @@ header .red_box{
     height: 8px;
     background: #fdd4d8;
 }
-
-/* card3 change start  */
-
 
 .card_bx .cards_bx1 .card3 .content h2{
     font-size: 19px;
@@ -493,8 +478,6 @@ header .red_box{
 .card_bx .cards_bx1 .card_b .content a:hover{
     background: #fb808b;
 }
-
-/* app box start  */
 .app_box{
     position: relative;
     width: 100%;
@@ -548,7 +531,6 @@ header .red_box{
     position: relative;
     width: 35%;
     height: 100%;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -611,7 +593,6 @@ header .red_box{
     position: relative;
     width: 80%;
     height: 100%;
-    /* border: 1px solid #000; */
     margin: auto;
     display: flex;
 }
@@ -619,7 +600,6 @@ header .red_box{
     position: relative;
     width: 50%;
     height: 70%;
-    /* border: 1px solid #000; */
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
@@ -784,9 +764,6 @@ header .red_box{
     display: none;
     cursor: pointer;
 } 
-
-
-/* address start  */
 address{
     width: 100%;
     height: 60px;
@@ -797,7 +774,6 @@ address .add{
     height: 100%;
     display: flex;
     margin: auto;
-    /* border: 1px solid #fff; */
 }
 address .add .kfc-add, .kfc-icon{
     width: 50%;
@@ -805,7 +781,6 @@ address .add .kfc-add, .kfc-icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid #ffff; */
 }
 
 address .add .kfc-add .add_logo{
@@ -847,4 +822,72 @@ address .add .kfc-icon a img{
 }
 address .add .kfc-icon a:hover{
    transform: rotate(360deg);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #1f2329;
+    z-index: 2;
+}
+
+footer::before{
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 200px;
+    background: url('img/kfc_brand.png')no-repeat;
+    right: 10%;
+    bottom: 0px;
+    z-index: -1;
+}
+
+footer .links{
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+footer .links .card_foot{
+    width: 170px;
+    height: 93%;
+}
+footer .links .card_foot:nth-child(2){
+    padding-top: 40px;
+}
+footer .links .card_foot li{
+   list-style-type: none;
+   color: #e4e4e4;
+   padding: 5px 0px;
+   font-size: 14px;
+}
+footer .links .card_foot li:nth-child(1){
+   padding: 15px 0px 15px 0px;
+}
+footer .links .card_foot li a{
+   text-decoration: none;
+   color: gray;
+   font-size: 13px;
+   transition: all .3s ease-in-out;
+}
+footer .links .card_foot li a:hover{
+   color: #e4e4e4;
+}
+
+footer .foot1{
+    width: 80%;
+    margin: auto;
+    font-size: 11px;
+    color: gray;
+}
+footer .foot1 span:nth-child(1){
+   margin-right: 50px;
+}
+
+header section .left_content_side .dots .head_dots_main{
+    width: 20px;
+    height: 8px;
+    background: #fff;
 }
